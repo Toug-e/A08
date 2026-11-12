@@ -10,7 +10,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+viewport {
+	width: 20vw;
+}
 /* default styles */
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +21,6 @@ body {
 	max-width: 1024px;
 	margin: auto;
 	border: 2px solid var(--accent-color);
-	width: 20vw;
 	padding-bottom: .25em;
 	padding-top:.25em;
 }
@@ -90,15 +91,16 @@ main > aside {
 	flex-basis: 25%;
 	margin: 0;
 	padding: 1em;
-	img{
-		width: 100%;
-		min-width: 40px;
-		max-width: 75px;
-	}
-	
 }
 
-*featured{
+main > aside img {
+  display: block;
+  width: 100%;
+  min-width: 40px;
+  max-width: 75px;
+}
+
+.featured{
 	border-top: 2px solid var(--accent-color);
 	border-bottom: 2px solid var(--accent-color);
 }
@@ -108,14 +110,14 @@ section {
 	flex-basis: 75%;
 	min-width: 0;
 	margin: 0;
-	& img{
-		float:right;
-		width: 100%;
-		min-width: 100px;
-		max-width: 250px;
-	}
 }
-
+section img {
+  float: right;
+  width: 100%;
+  min-width: 100px;
+  max-width: 250px;
+  margin: 0 0 1em 1em;
+}
 /* the styles for the footer */
 footer {
 	background-color: var(--accent-color);
