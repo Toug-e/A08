@@ -69,6 +69,7 @@ header {
 /* the styles for the main content */
 main {
 	padding: 0 1em 1em;
+	clear: left;
 	display: flex;
 	& blockquote {
 		font-style: italic;
@@ -79,7 +80,7 @@ main {
 		border-radius: 10px;
 	}
 }
-main > aside {
+aside {
 	flex-basis: 25%;
 	margin: 0;
 	padding: 1em;
