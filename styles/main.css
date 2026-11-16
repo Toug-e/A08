@@ -90,9 +90,8 @@ main > aside {
 	margin: 1em 0;
 	border-top: 2px solid var(--accent-color);
 	border-bottom: 2px solid var(--accent-color);
-	
-	&img{
-		float: left;
+	& img{
+		float: right;
 		min-width: 100px;
 		max-width: 250px;
 	}
